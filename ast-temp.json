@@ -1,0 +1,28 @@
+[
+    {
+        "title": ":root",
+        "properties": [
+            "--str: 'Hello, World!';"
+        ]
+    },
+    {
+        "title": ".function#main::before",
+        "properties": [
+            "content: var(--String);",
+            "z-index: var(--NULL);"
+        ]
+    },
+    {
+        "title": ".function#main",
+        "properties": [
+            "text-align: var(--str);",
+            "z-index: var(--NULL);"
+        ]
+    },
+    {
+        "title": ".function#main::after",
+        "properties": [
+            "content: var(--str);"
+        ]
+    }
+]

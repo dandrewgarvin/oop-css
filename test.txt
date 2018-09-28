@@ -1,0 +1,28 @@
+/* definition and assignment of variables */
+:root {
+    --str: 'Hello, World!';
+}
+
+/* ::before defines the expected parameters for the function */
+.function#main::before {
+    content: var(--String); /* var(--String) is a primitive data type */
+    z-index: var(--NULL); /* Declare what the function is expected to return */
+}
+.function#main {
+    /* The following line is a print statement - The comment at the end is the value you wish to print. */
+    /* The value of text-align can either be left, center, right, or justify. Each of these will have a different use case, and expect different args. */
+    text-align: var(--str);
+    z-index: var(--NULL);
+}
+/* ::after is the invocation of a function, and passes in the arguments */
+.function#main::after {
+    content: var(--str); /* var(--str) was defined at the top of this file */
+}
+
+/*
+    This is the most basic version of a hello world program in CSS.
+    It defines a top-level primitive variable called --str,
+    creates a function called main, which expects a String argument, and simply prints the value.
+
+    At the end of the function, it returns NULL via the z-index (return) property.
+*/
