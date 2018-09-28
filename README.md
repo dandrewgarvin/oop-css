@@ -15,3 +15,14 @@ OOPS is a poor, humorous attempt at taking the well-disliked syntax of CSS, and 
 ## Notes
 
 This project was built in a very short period of time, and I, the author, would like to take full credit for the idea/project, but request that anyone looking at this code does not judge me for the way it was written. Since this project was just for fun, I wasn't worried about optimizing the code, but instead wrote it only in a way that worked.
+
+## TODO
+
+- [x] Remove comments from code
+- [x] Break code into json blocks
+- [x] Save ast-temp.json file for documentation
+- [ ] File should not be hard-coded in, but be received from stdin
+- [ ] :root variables in JSON file should be saved as JS variables
+- [ ] .function blocks should be turned into JS function blocks
+- [ ] .function::before block should declare parameters (if not exists, no parameters)
+- [ ] .function::after (if exists) should invoke function block
